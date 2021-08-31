@@ -2,9 +2,9 @@ function [delta_V,distance_target_end,distance_target_begin] = STK_simulation(ta
 %STK_SIMULATION Summary of this function goes here
 %   Detailed explanation goes here
 
-
+    global STK_version;
     % Get reference to running STK instance
-    uiApplication = actxGetRunningServer('STK11.Application'); %change with your STK version
+    uiApplication = actxGetRunningServer(STK_version); %change with your STK version
     
 %   STKXApplication = actxserver('STKX12.application');
 %   uiApplication.NoGraphics = true;
@@ -173,6 +173,14 @@ function [delta_V,distance_target_end,distance_target_begin] = STK_simulation(ta
     
     Delta_V = dV0_plus' - dV0_min;
     Boost = norm(Delta_V)*1000;
+    
+    %figure plot to visualise data
+    figure()
+    plot3(data_chaser_X,data_chaser_Y,data_chaser_Z)
+    axis equal
+    grid on
+    text (data_chaser_X(1), data_chaser_Y(1), data_chaser_Z(1), "Boost 1")
+    text (data_chaser_X(time), data_chaser_Y(time), data_chaser_Z(time), "Boost 2")
     
 
 delta_V = dV0_plus;
