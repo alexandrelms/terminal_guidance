@@ -1,0 +1,859 @@
+<?xml version = "1.0" standalone = "yes"?>
+<VAR name = "Propagate1">
+    <SCOPE Class = "MCSSegment">
+        <VAR name = "Version">
+            <STRING>&quot;1.0.0 a&quot;</STRING>
+        </VAR>
+        <VAR name = "STKVersion">
+            <INT>1161</INT>
+        </VAR>
+        <VAR name = "Description">
+            <STRING>&quot;Propagates until stopping conditions are met&quot;</STRING>
+        </VAR>
+        <VAR name = "Type">
+            <STRING>&quot;Propagate&quot;</STRING>
+        </VAR>
+        <VAR name = "UserComment">
+            <STRING>&quot;Propagates until stopping conditions are met&quot;</STRING>
+        </VAR>
+        <VAR name = "ReadOnly">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "Clonable">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "Category">
+            <STRING>&quot;@Top&quot;</STRING>
+        </VAR>
+        <VAR name = "SegmentColor">
+            <INT>65280</INT>
+        </VAR>
+        <VAR name = "DisplayCoordSystem">
+            <LINKTOOBJ>
+                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+            </LINKTOOBJ>
+        </VAR>
+        <VAR name = "ResultsSelected">
+            <LIST />
+        </VAR>
+        <VAR name = "Results">
+            <LIST>
+                <VAR name = "X">
+                    <SCOPE Class = "AsStateCalc">
+                        <VAR name = "Version">
+                            <STRING>&quot;1.0.0 a&quot;</STRING>
+                        </VAR>
+                        <VAR name = "STKVersion">
+                            <INT>1161</INT>
+                        </VAR>
+                        <VAR name = "Description">
+                            <STRING>&quot;X component of Position&quot;</STRING>
+                        </VAR>
+                        <VAR name = "Type">
+                            <STRING>&quot;AsStateCalcX&quot;</STRING>
+                        </VAR>
+                        <VAR name = "UserComment">
+                            <STRING>&quot;X component of Position&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ReadOnly">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Clonable">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Category">
+                            <STRING>&quot;Cartesian Elems&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ShooterControls">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "CoordSystem">
+                            <LINKTOOBJ>
+                                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+                            </LINKTOOBJ>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "Y">
+                    <SCOPE Class = "AsStateCalc">
+                        <VAR name = "Version">
+                            <STRING>&quot;1.0.0 a&quot;</STRING>
+                        </VAR>
+                        <VAR name = "STKVersion">
+                            <INT>1161</INT>
+                        </VAR>
+                        <VAR name = "Description">
+                            <STRING>&quot;Y component of Position&quot;</STRING>
+                        </VAR>
+                        <VAR name = "Type">
+                            <STRING>&quot;AsStateCalcY&quot;</STRING>
+                        </VAR>
+                        <VAR name = "UserComment">
+                            <STRING>&quot;Y component of Position&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ReadOnly">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Clonable">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Category">
+                            <STRING>&quot;Cartesian Elems&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ShooterControls">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "CoordSystem">
+                            <LINKTOOBJ>
+                                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+                            </LINKTOOBJ>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "Z">
+                    <SCOPE Class = "AsStateCalc">
+                        <VAR name = "Version">
+                            <STRING>&quot;1.0.0 a&quot;</STRING>
+                        </VAR>
+                        <VAR name = "STKVersion">
+                            <INT>1161</INT>
+                        </VAR>
+                        <VAR name = "Description">
+                            <STRING>&quot;Z component of Position&quot;</STRING>
+                        </VAR>
+                        <VAR name = "Type">
+                            <STRING>&quot;AsStateCalcZ&quot;</STRING>
+                        </VAR>
+                        <VAR name = "UserComment">
+                            <STRING>&quot;Z component of Position&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ReadOnly">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Clonable">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Category">
+                            <STRING>&quot;Cartesian Elems&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ShooterControls">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "CoordSystem">
+                            <LINKTOOBJ>
+                                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+                            </LINKTOOBJ>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </LIST>
+        </VAR>
+        <VAR name = "InitialState">
+            <SCOPE>
+                <VAR name = "Orbit_State">
+                    <SCOPE Class = "Orbit_State">
+                        <VAR name = "Cartesian">
+                            <SCOPE Class = "container">
+                                <VAR name = "X">
+                                    <QUANTITY Dimension = "DistanceUnit" Unit = "m">
+                                        <REAL>-1151653.733313569</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Y">
+                                    <QUANTITY Dimension = "DistanceUnit" Unit = "m">
+                                        <REAL>-797493.7274155641</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Z">
+                                    <QUANTITY Dimension = "DistanceUnit" Unit = "m">
+                                        <REAL>-7447459.2325295</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Vx">
+                                    <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                                        <REAL>6518.352715255463</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Vy">
+                                    <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                                        <REAL>2898.470941740631</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Vz">
+                                    <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                                        <REAL>-1304.602967303668</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "CoordSysRep">
+                            <LINKTOOBJ>
+                                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+                            </LINKTOOBJ>
+                        </VAR>
+                        <VAR name = "DryMass">
+                            <QUANTITY Dimension = "MassUnit" Unit = "kg">
+                                <REAL>500</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "FuelMass">
+                            <QUANTITY Dimension = "MassUnit" Unit = "kg">
+                                <REAL>500</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "DragArea">
+                            <QUANTITY Dimension = "Small Area" Unit = "m^2">
+                                <REAL>20</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "SRPArea">
+                            <QUANTITY Dimension = "Small Area" Unit = "m^2">
+                                <REAL>20</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "TankPressure">
+                            <QUANTITY Dimension = "PressureUnit" Unit = "Pa">
+                                <REAL>5000</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "TankTemperature">
+                            <QUANTITY Dimension = "Temperature" Unit = "K">
+                                <REAL>293.15</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "FuelDensity">
+                            <QUANTITY Dimension = "SmallDensity" Unit = "kg*m^-3">
+                                <REAL>1000</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "Cr">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "Cd">
+                            <REAL>2.2</REAL>
+                        </VAR>
+                        <VAR name = "RadPressureCoeff">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "RadPressureArea">
+                            <QUANTITY Dimension = "Small Area" Unit = "m^2">
+                                <REAL>20</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "K1">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "K2">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "HasSTM">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "STMRefEpoch">
+                            <DATE>22 Dec 1592 11:59:27.815999985</DATE>
+                        </VAR>
+                        <VAR name = "STMRefEpochSet">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "STM">
+                            <SCOPE Class = "container">
+                                <VAR name = "STMPosXPosX">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYPosY">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZPosZ">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXVelX">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYVelY">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZVelZ">
+                                    <REAL>1</REAL>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "UserVariables">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "Epoch">
+                            <DATE>14 Jun 2021 10:00:37.000000000</DATE>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </SCOPE>
+        </VAR>
+        <VAR name = "FinalState">
+            <SCOPE>
+                <VAR name = "Orbit_State">
+                    <SCOPE Class = "Orbit_State">
+                        <VAR name = "Cartesian">
+                            <SCOPE Class = "container">
+                                <VAR name = "X">
+                                    <QUANTITY Dimension = "DistanceUnit" Unit = "m">
+                                        <REAL>-4574916.128900077</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Y">
+                                    <QUANTITY Dimension = "DistanceUnit" Unit = "m">
+                                        <REAL>-1850707.296823731</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Z">
+                                    <QUANTITY Dimension = "DistanceUnit" Unit = "m">
+                                        <REAL>5787444.652145701</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Vx">
+                                    <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                                        <REAL>-4952.369986884565</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Vy">
+                                    <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                                        <REAL>-2410.426764896074</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                                <VAR name = "Vz">
+                                    <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                                        <REAL>-4681.739011314238</REAL>
+                                    </QUANTITY>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "CoordSysRep">
+                            <LINKTOOBJ>
+                                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+                            </LINKTOOBJ>
+                        </VAR>
+                        <VAR name = "DryMass">
+                            <QUANTITY Dimension = "MassUnit" Unit = "kg">
+                                <REAL>500</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "FuelMass">
+                            <QUANTITY Dimension = "MassUnit" Unit = "kg">
+                                <REAL>500</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "DragArea">
+                            <QUANTITY Dimension = "Small Area" Unit = "m^2">
+                                <REAL>20</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "SRPArea">
+                            <QUANTITY Dimension = "Small Area" Unit = "m^2">
+                                <REAL>20</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "TankPressure">
+                            <QUANTITY Dimension = "PressureUnit" Unit = "Pa">
+                                <REAL>5000</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "TankTemperature">
+                            <QUANTITY Dimension = "Temperature" Unit = "K">
+                                <REAL>293.15</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "FuelDensity">
+                            <QUANTITY Dimension = "SmallDensity" Unit = "kg*m^-3">
+                                <REAL>1000</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "Cr">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "Cd">
+                            <REAL>2.2</REAL>
+                        </VAR>
+                        <VAR name = "RadPressureCoeff">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "RadPressureArea">
+                            <QUANTITY Dimension = "Small Area" Unit = "m^2">
+                                <REAL>20</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "K1">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "K2">
+                            <REAL>1</REAL>
+                        </VAR>
+                        <VAR name = "HasSTM">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "STMRefEpoch">
+                            <DATE>22 Dec 1592 11:59:27.815999985</DATE>
+                        </VAR>
+                        <VAR name = "STMRefEpochSet">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "STM">
+                            <SCOPE Class = "container">
+                                <VAR name = "STMPosXPosX">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosXVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYPosY">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosYVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZPosZ">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMPosZVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXVelX">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelXVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYVelY">
+                                    <REAL>1</REAL>
+                                </VAR>
+                                <VAR name = "STMVelYVelZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZPosX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZPosY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZPosZ">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZVelX">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZVelY">
+                                    <REAL>0</REAL>
+                                </VAR>
+                                <VAR name = "STMVelZVelZ">
+                                    <REAL>1</REAL>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "UserVariables">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "Epoch">
+                            <DATE>14 Jun 2021 13:00:37.000000000</DATE>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </SCOPE>
+        </VAR>
+        <VAR name = "LastRunCode">
+            <STRING>&quot;Marching&quot;</STRING>
+        </VAR>
+        <VAR name = "BPlanes">
+            <LIST />
+        </VAR>
+        <VAR name = "UpdateAnimationTimeAfterRunning">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "RunDirection">
+            <STRING>&quot;Forward&quot;</STRING>
+        </VAR>
+        <VAR name = "BeenRun">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "TreeNodeExpanded">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "UseMaxPropTime">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "UseMaxPropTimeWarn">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "OverrideMaxPropTime">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "MaxPropTime">
+            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                <REAL>8640000</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "MinPropTime">
+            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                <REAL>0</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "StopForInitiallySurpassedEpochs">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "SmallestStep">
+            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                <REAL>60</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "LargestStep">
+            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                <REAL>81.804</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "AverageStep">
+            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                <REAL>80.62356390977448</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "NumSteps">
+            <INT>133</INT>
+        </VAR>
+        <VAR name = "FinalDeltaV">
+            <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                <REAL>0</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "FinalInertialDeltaVx">
+            <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                <REAL>0</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "FinalInertialDeltaVy">
+            <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                <REAL>0</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "FinalInertialDeltaVz">
+            <QUANTITY Dimension = "Rate" Unit = "m*sec^-1">
+                <REAL>0</REAL>
+            </QUANTITY>
+        </VAR>
+        <VAR name = "TriggerLog">
+            <LIST>
+                <VAR name = "Trigger_Log">
+                    <SCOPE Class = "TriggerLog">
+                        <VAR name = "Version">
+                            <STRING>&quot;1.0.0 a&quot;</STRING>
+                        </VAR>
+                        <VAR name = "STKVersion">
+                            <INT>1161</INT>
+                        </VAR>
+                        <VAR name = "Description">
+                            <STRING>&quot;Trigger Log Information&quot;</STRING>
+                        </VAR>
+                        <VAR name = "Type">
+                            <STRING>&quot;TriggerLogEntry&quot;</STRING>
+                        </VAR>
+                        <VAR name = "UserComment">
+                            <STRING>&quot;Trigger Log Information&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ReadOnly">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Clonable">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Category">
+                            <STRING>&quot;&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ShooterControls">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "Epoch">
+                            <DATE>14 Jun 2021 13:00:37.000000000</DATE>
+                        </VAR>
+                        <VAR name = "TriggerDescription">
+                            <STRING>&quot;Duration; Run Sequence STOP&quot;</STRING>
+                        </VAR>
+                        <VAR name = "CausedTermination">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </LIST>
+        </VAR>
+        <VAR name = "UsedRegTime">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "Propagator">
+            <LINKTOOBJ>
+                <STRING>&quot;Earth_HPOP_Default_v10&quot;</STRING>
+            </LINKTOOBJ>
+        </VAR>
+        <VAR name = "LastRunPropagator">
+            <LINKTOOBJ>
+                <STRING>&quot;Earth_HPOP_Default_v10&quot;</STRING>
+            </LINKTOOBJ>
+        </VAR>
+        <VAR name = "StoppingConditionsSelected">
+            <LIST />
+        </VAR>
+        <VAR name = "StoppingConditions">
+            <LIST>
+                <VAR name = "Duration">
+                    <SCOPE Class = "AsStateTrigger">
+                        <VAR name = "Version">
+                            <STRING>&quot;1.0.0 a&quot;</STRING>
+                        </VAR>
+                        <VAR name = "STKVersion">
+                            <INT>1161</INT>
+                        </VAR>
+                        <VAR name = "Description">
+                            <STRING>&quot;Stop after a specified duration&quot;</STRING>
+                        </VAR>
+                        <VAR name = "Type">
+                            <STRING>&quot;Duration&quot;</STRING>
+                        </VAR>
+                        <VAR name = "UserComment">
+                            <STRING>&quot;Stop after a specified duration&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ReadOnly">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Clonable">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Category">
+                            <STRING>&quot;@Top&quot;</STRING>
+                        </VAR>
+                        <VAR name = "ShooterControls">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "Comment">
+                            <STRING>&quot;User-supplied comment&quot;</STRING>
+                        </VAR>
+                        <VAR name = "MaxTripTimes">
+                            <INT>10000</INT>
+                        </VAR>
+                        <VAR name = "ConstraintsSelected">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "Constraints">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "CalcObjectAttributes">
+                            <SCOPE>
+                                <VAR name = "Version">
+                                    <STRING>&quot;1.0.0 a&quot;</STRING>
+                                </VAR>
+                                <VAR name = "STKVersion">
+                                    <INT>1161</INT>
+                                </VAR>
+                                <VAR name = "Description">
+                                    <STRING>&quot;Duration from an epoch&quot;</STRING>
+                                </VAR>
+                                <VAR name = "Type">
+                                    <STRING>&quot;AsStateCalcDuration&quot;</STRING>
+                                </VAR>
+                                <VAR name = "UserComment">
+                                    <STRING>&quot;Duration from an epoch&quot;</STRING>
+                                </VAR>
+                                <VAR name = "ReadOnly">
+                                    <BOOL>false</BOOL>
+                                </VAR>
+                                <VAR name = "Clonable">
+                                    <BOOL>true</BOOL>
+                                </VAR>
+                                <VAR name = "Category">
+                                    <STRING>&quot;&quot;</STRING>
+                                </VAR>
+                                <VAR name = "ShooterControls">
+                                    <LIST />
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "BeforeConditionsSelected">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "BeforeConditions">
+                            <LIST />
+                        </VAR>
+                        <VAR name = "Inherited">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Active">
+                            <BOOL>true</BOOL>
+                        </VAR>
+                        <VAR name = "Dimension">
+                            <STRING>&quot;TimeUnit&quot;</STRING>
+                        </VAR>
+                        <VAR name = "Sequence">
+                            <LINKTOOBJ>
+                                <STRING>&quot;STOP&quot;</STRING>
+                            </LINKTOOBJ>
+                        </VAR>
+                        <VAR name = "TripValue">
+                            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                                <REAL>10800</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "Tolerance">
+                            <QUANTITY Dimension = "TimeUnit" Unit = "sec">
+                                <REAL>1e-08</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </LIST>
+        </VAR>
+        <VAR name = "ShooterControls">
+            <LIST />
+        </VAR>
+    </SCOPE>
+</VAR>

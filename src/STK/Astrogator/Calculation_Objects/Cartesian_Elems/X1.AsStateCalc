@@ -1,0 +1,37 @@
+<?xml version = "1.0" standalone = "yes"?>
+<VAR name = "X1">
+    <SCOPE Class = "AsStateCalc">
+        <VAR name = "Version">
+            <STRING>&quot;1.0.0 a&quot;</STRING>
+        </VAR>
+        <VAR name = "STKVersion">
+            <INT>1161</INT>
+        </VAR>
+        <VAR name = "Description">
+            <STRING>&quot;X component of Position&quot;</STRING>
+        </VAR>
+        <VAR name = "Type">
+            <STRING>&quot;AsStateCalcX&quot;</STRING>
+        </VAR>
+        <VAR name = "UserComment">
+            <STRING>&quot;X component of Position&quot;</STRING>
+        </VAR>
+        <VAR name = "ReadOnly">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "Clonable">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "Category">
+            <STRING>&quot;Cartesian Elems&quot;</STRING>
+        </VAR>
+        <VAR name = "ShooterControls">
+            <LIST />
+        </VAR>
+        <VAR name = "CoordSystem">
+            <LINKTOOBJ>
+                <STRING>&quot;CentralBody/Earth Inertial&quot;</STRING>
+            </LINKTOOBJ>
+        </VAR>
+    </SCOPE>
+</VAR>
