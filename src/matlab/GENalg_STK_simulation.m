@@ -3,8 +3,9 @@ function [delta_V,distance_target_end] = GENalg_STK_simulation(deltaV_input,targ
 %   Detailed explanation goes here
 
 
+    global STK_version;
     % Get reference to running STK instance
-    uiApplication = actxGetRunningServer('STK12.Application'); %change with your STK version
+    uiApplication = actxGetRunningServer(STK_version); %change with your STK version
     
 %   STKXApplication = actxserver('STKX12.application');
 %   uiApplication.NoGraphics = true;
