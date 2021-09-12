@@ -1,1 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2021-09-12T13:28:49.977Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" version="15.0.6" etag="Yqb5Xk4akvVBmemPBhHW" type="github"><diagram id="FZgH1Sr0kV8n_84SCtGH">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-12T13:37:14.001Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="6DvflCbU21m7aicDYLdp" version="15.0.6" type="github">
+  <diagram id="FZgH1Sr0kV8n_84SCtGH" name="Page-1">
+    <mxGraphModel dx="1673" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-1" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Inputs&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Chaser&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Target&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Duration&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="130" width="160" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-2" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Outputs&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Delta V&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Trajectory&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Distance reached&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="130" width="160" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-3" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Matlab&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Retrieve coordinates from STK&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Compute Clohessy-Wiltshire matrix&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Implement Delta V&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="130" width="400" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-4" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;System Tool Kit&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Implement spacecraft&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Retrieve coordinates frames&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;- Simulate situation&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="520" width="400" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-5" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="500" as="sourcePoint" />
+            <mxPoint x="550" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-6" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="419.9999999999998" as="sourcePoint" />
+            <mxPoint x="640" y="499.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-7" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="269.9999999999998" as="sourcePoint" />
+            <mxPoint x="380" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uQb4gQyLG-8VtOOXOhDg-8" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="820" y="264.4099999999998" as="sourcePoint" />
+            <mxPoint x="900" y="264.4099999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
